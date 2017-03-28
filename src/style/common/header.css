@@ -1,0 +1,8 @@
+.navbar-default {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 0;
+    z-index: 100;
+    margin: 0;
+}

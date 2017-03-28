@@ -1,0 +1,28 @@
+.tab-icon-bar-box {
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+}
+
+.icon-tab {
+    height: inherit;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+}
+
+.icon-tab:hover {
+    border-bottom: solid 4px rgb(8, 100, 85);
+}
+
+.icon-tab.active {
+    border-bottom: solid 4px rgb(8, 100, 85);
+}
+
+.icon-tab.active:hover {
+    border-bottom: solid 4px rgb(8, 100, 85);
+
+}

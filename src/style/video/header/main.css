@@ -1,0 +1,9 @@
+@import "./tab-icon-bar.css";
+@import "./text.css";
+
+.video-header {
+    background: url("http://eskipaper.com/images/stunning-cosmos-wallpaper-1.jpg");
+    background-position: 0;
+    background-size: cover;
+}
+

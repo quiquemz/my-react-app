@@ -1,0 +1,12 @@
+.video-item {
+    cursor: pointer;
+}
+
+.video-snippet {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.list-group-item:hover {
+    background-color: #eee;
+}

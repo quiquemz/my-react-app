@@ -1,0 +1,20 @@
+.inspiration-msg {
+    text-align: center;
+    letter-spacing: 38px;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+    .inspiration-msg {
+        text-align: center;
+        letter-spacing: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0;
+        font-weight: 100;
+        font-size: 20px;
+    }
+}
