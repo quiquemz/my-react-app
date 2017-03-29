@@ -1,3 +1,4 @@
+/*
 import axios from 'axios';
 import $ from 'jquery';
 
@@ -27,3 +28,4 @@ export default function addVideo(videoData) {
         payload: request
     };
 }
+*/
