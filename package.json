@@ -9,12 +9,8 @@
     "lint:watch": "npm run lint --watch",
     "open:src": "node ./tools/srcServer.js",
     "prestart": "babel-node ./tools/startMessage.js",
-    "start": "npm-run-all --parallel json-server open:src lint:watch",
-    "prod": "node ./tools/srcServer.js",
-    "postinstall": "node ./tools/srcServer.js"
-  },
-  "engines": {
-    "node": "5.9.1"
+    "start2": "npm-run-all --parallel json-server open:src lint:watch",
+    "start": "node server.js"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
@@ -30,7 +26,9 @@
     "react-router": "2.4.0",
     "redux": "3.5.2",
     "redux-promise": "^0.5.3",
-    "webpack": "1.13.0",
+    "webpack": "1.13.0"
+  },
+  "devDependencies": {
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-loader": "6.2.4",
