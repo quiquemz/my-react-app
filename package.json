@@ -11,7 +11,10 @@
     "prestart": "babel-node ./tools/startMessage.js",
     "start": "npm-run-all --parallel json-server open:src lint:watch",
     "prod": "node ./tools/srcServer.js",
-    "postinstall": "webpack -p --config webpack.prod.config.js"
+    "postinstall": "node ./tools/srcServer.js"
+  },
+  "engines": {
+    "node": "5.9.1"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
