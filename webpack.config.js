@@ -1,9 +1,9 @@
-import webpack from 'webpack';
-import path from 'path';
+const path = require('path');
+const webpack = require('webpack');
 
-export default {
+module.exports = {
     debug: true,
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map',
     noInfo: false,
     entry: [
         'eventsource-polyfill', // necessary for hot reloading with IE
@@ -20,6 +20,7 @@ export default {
         contentBase: './src'
     },
     plugins: [
+        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         new webpack.ProvidePlugin({

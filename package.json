@@ -5,11 +5,13 @@
   "author": "Saul Mendez",
   "scripts": {
     "json-server": "json-server --watch db.json --port 8000",
-    "lint": "node_modules/.bin/esw webpack.config.dev.* src tools",
+    "lint": "node_modules/.bin/esw webpack.config.js src",
     "lint:watch": "npm run lint --watch",
-    "open:src": "babel-node ./tools/srcServer.js",
+    "open:src": "node ./tools/srcServer.js",
     "prestart": "babel-node ./tools/startMessage.js",
-    "start": "npm-run-all --parallel json-server open:src lint:watch"
+    "start": "npm-run-all --parallel json-server open:src lint:watch",
+    "prod": "node ./tools/srcServer.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",

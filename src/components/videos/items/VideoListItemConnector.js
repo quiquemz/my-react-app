@@ -28,32 +28,8 @@ class VideoListItemConnector extends Component {
                             src={ this.props.video.url }
                             allowTransparency="true"
                             allowFullScreen="allowfullscreen"
+
                     />
-                </div>
-            );
-        } else if(this.props.selectedTab === 'video-description') {
-            return (
-                <div className="row">
-                    <div className="col-sm-4">
-                        <div class="fb-video"
-                             data-href={ this.props.video.url }
-                             data-width="500"
-                             data-allowfullscreen="true">
-                        </div>
-                        {/*<div className="video-item embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item"
-                                    src={ this.props.video.url }
-                                    allowTransparency="true"/>
-                        </div>*/}
-                    </div>
-                    <div className="col-sm-8">
-                        <span className="glyphicon glyphicon-remove pull-right"
-                              onClick={ this.onButtonClick }
-                              style={{ color: "red", cursor: "pointer", marginTop: 10, fontSize: 20 }} />
-                        <h3>Title</h3>
-                        <p>Author: fsda</p>
-                        <p>Date release: fdsa</p>
-                    </div>
                 </div>
             );
         } else {
