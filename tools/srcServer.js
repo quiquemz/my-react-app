@@ -1,6 +1,6 @@
 'use strict';
 
-var config = (process.env.NODE_ENV !== 'production') ? require('../webpack.config') : require('../webpack.prod.config');
+var config = (process.env.NODE_ENV !== 'production') ? require('../webpack.config.prod.js') : require('../webpack.config.js');
 var express = require('express');
 var open = require('open');
 var path = require('path');
