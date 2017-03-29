@@ -11,7 +11,7 @@
     "prestart": "babel-node ./tools/startMessage.js",
     "start": "npm-run-all --parallel json-server open:src lint:watch",
     "prod": "node ./tools/srcServer.js",
-    "postinstall": "webpack -p --config webpack.prod.config.js"
+    "postinstall": "node ./tools/srcServer.js"
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
@@ -53,7 +53,6 @@
     "open": "0.0.5",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
   },
